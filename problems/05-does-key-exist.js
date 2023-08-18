@@ -4,14 +4,17 @@ key and returns true if the key is inside the object and false if the
 key is not inside the object.
 
 Examples:
-
-let obj1 = {bootcamp: 'App Academy', course: 'Bootcamp Prep'}
-doesKeyExist(obj1, 'course'); // => true
-doesKeyExist(obj1, 'name'); // => false
 ***********************************************************************/
+// let obj1 = {bootcamp: 'App Academy', course: 'Bootcamp Prep'}
+// doesKeyExist(obj1, 'course'); // => true
+// doesKeyExist(obj1, 'name'); // => false
+
 
 function doesKeyExist(obj, key) {
-  // Your code here
+    // console.log(obj.hasOwnProperty(key));
+    // return (obj.hasOwnProperty(key));
+    console.log(key in obj);
+    return (key in obj);
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

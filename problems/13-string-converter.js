@@ -12,7 +12,12 @@ console.log(stringConverter("raccoon")); // => {r: 1, a: 1, c: 2, o: 2, n: 1}
 ***********************************************************************/
 
 function stringConverter(string) {
-  // Your code here
+  const stringToObject = {};
+
+  for (const current of string) {
+    stringToObject[current] = (stringToObject[current] || 0) + 1;
+  };
+  return stringToObject;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

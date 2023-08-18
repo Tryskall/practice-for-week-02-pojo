@@ -12,7 +12,12 @@ console.log(arrayConverter(["apple", "banana", "potato", "banana"])); // => {app
 ***********************************************************************/
 
 function arrayConverter(array) {
-  // Your code here
+  const arrayToObject = {};
+
+  for (const current of array) {
+    arrayToObject[current] = (arrayToObject[current] || 0) + 1;
+  };
+  return arrayToObject;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
